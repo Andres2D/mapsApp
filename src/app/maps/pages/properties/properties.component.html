@@ -1,1 +1,26 @@
-<p>properties works!</p>
+
+<div class="row mt-3">
+    <div class="col-2"></div>
+    <div class="col">
+        <h1>List of places</h1>
+        <hr>
+    </div>
+</div>
+
+<div class="row container">
+    <div class="col-2"></div>
+    <div class="col">
+        <div class="row">
+            <div class="col-4 mb-2"
+                 *ngFor="let propery of propiedades">
+                <div class="card">
+                    <app-tiny-map [lngLat]="propery.lngLat" class="card-img-top"></app-tiny-map>
+                    <div class="card-body">
+                        <h5 class="card-title">{{propery.titulo}}</h5>
+                        <p class="card-text">{{propery.descripcion}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
