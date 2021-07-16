@@ -11,3 +11,11 @@ app-menu{
     left: 20px;
     z-index: 99999;
 }
+
+app-footer{
+    text-align: center;
+    position: fixed;
+    background-color: #476a84;
+    z-index: 99999;
+    color: white;
+}
